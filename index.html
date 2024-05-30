@@ -7,33 +7,34 @@
     <link rel="icon" href="https://santon39.github.io/testiranje/favicon.ico" type="image/x-icon">
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f9f9f9;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f0f2f5;
             color: #333;
             display: flex;
-            min-height: 100vh;
             margin: 0;
+            height: 100vh;
+            overflow: hidden;
         }
         .side-menu {
             width: 250px;
             background-color: #0073b1;
             padding: 20px;
             box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-            color: #fff;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            color: #fff;
         }
         .side-menu a {
             display: block;
             color: #fff;
             text-decoration: none;
-            padding: 15px;
+            padding: 15px 20px;
             margin: 10px 0;
             border-radius: 5px;
-            width: 100%;
             text-align: center;
+            width: 100%;
             transition: background-color 0.3s ease;
         }
         .side-menu a:hover {
@@ -41,20 +42,21 @@
         }
         .content {
             flex-grow: 1;
-            padding: 50px;
+            padding: 40px;
+            overflow-y: auto;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
         }
         .container {
-            max-width: 600px;
-            margin: auto;
+            max-width: 800px;
+            width: 100%;
             background: #fff;
             padding: 30px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
             display: none;
-            transition: opacity 0.5s ease;
+            transition: opacity 0.3s ease;
         }
         .container.active {
             display: block;
@@ -72,7 +74,7 @@
             width: 100%;
             max-width: 600px;
             margin-top: 20px;
-            border-radius: 10px;
+            border-radius: 0;
         }
         hr {
             border: 0;
