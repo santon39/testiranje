@@ -7,27 +7,34 @@
     <link rel="icon" href="https://santon39.github.io/testiranje/favicon.ico" type="image/x-icon">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
             color: #333;
             display: flex;
             min-height: 100vh;
             margin: 0;
         }
         .side-menu {
-            width: 200px;
+            width: 250px;
             background-color: #0073b1;
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
             color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
         .side-menu a {
             display: block;
             color: #fff;
             text-decoration: none;
-            padding: 10px 0;
+            padding: 15px;
             margin: 10px 0;
-            border-bottom: 1px solid #005682;
+            border-radius: 5px;
+            width: 100%;
+            text-align: center;
+            transition: background-color 0.3s ease;
         }
         .side-menu a:hover {
             background-color: #005682;
@@ -35,30 +42,37 @@
         .content {
             flex-grow: 1;
             padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .container {
             max-width: 600px;
             margin: auto;
             background: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
             display: none;
+            transition: opacity 0.5s ease;
         }
         .container.active {
             display: block;
+            opacity: 1;
         }
-        h1 {
+        h1, h2 {
             color: #0073b1;
         }
         .profile-img {
             width: 150px;
             border-radius: 50%;
+            margin-bottom: 20px;
         }
         .specialization-img {
             width: 100%;
             max-width: 600px;
             margin-top: 20px;
-            border-radius: 0;
+            border-radius: 10px;
         }
         hr {
             border: 0;
@@ -74,6 +88,10 @@
             border-radius: 5px;
             display: inline-block;
             margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+        .visit-profile:hover {
+            background-color: #005682;
         }
     </style>
 </head>
