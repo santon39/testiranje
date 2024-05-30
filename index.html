@@ -1,13 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="google-site-verification" content="6GVpeGO1WVfDQRS9j9kiUmWvo4_A7zPP7PPN-GFcik8" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temporary Page</title>
+    <title>Connect with Matej Kirchofer on LinkedIn</title>
+    <link rel="icon" href="https://santon39.github.io/testiranje/favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .side-menu {
+            width: 200px;
+            background-color: #0073b1;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: #fff;
+        }
+        .side-menu a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 0;
+            margin: 10px 0;
+            border-bottom: 1px solid #005682;
+        }
+        .side-menu a:hover {
+            background-color: #005682;
+        }
+        .content {
+            flex-grow: 1;
+            padding: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: none;
+        }
+        .container.active {
+            display: block;
+        }
+        h1 {
+            color: #0073b1;
+        }
+        .profile-img {
+            width: 150px;
+            border-radius: 50%;
+        }
+        .specialization-img {
+            width: 100%;
+            max-width: 600px;
+            margin-top: 20px;
+            border-radius: 0;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #ccc;
+            margin: 40px 0;
+        }
+        .visit-profile {
+            text-decoration: none;
+            color: #fff;
+            background-color: #0073b1;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Temporary  Page</h1>
-    <p>This is a temporary page for me. Siuuu.</p>
+    <div class="side-menu">
+        <a href="#profile" onclick="showTab('profile')">Profile</a>
+        <a href="#certificate" onclick="showTab('certificate')">Certificate</a>
+    </div>
+    <div class="content">
+        <div id="profile" class="container active">
+            <img src="1.png" alt="Portrait of Matej Kirchofer" class="profile-img">
+            <h1>Connect with Matej Kirchofer on LinkedIn</h1>
+            <p>Product Testing and QA Analyst within the sportsbook industry💻</p>
+            <p><a href="https://www.linkedin.com/in/matej-kirchofer/" target="_blank" class="visit-profile" aria-label="Visit Matej Kirchofer's LinkedIn Profile">Visit my LinkedIn Profile</a></p>
+        </div>
+        <div id="certificate" class="container">
+            <h2>My IBM Data Science Specialization Certificate</h2>
+            <img src="https://santon39.github.io/testiranje/specialization.png" alt="IBM Data Science Specialization" class="specialization-img">
+        </div>
+    </div>
+
+    <script>
+        function showTab(tabId) {
+            // Hide all containers
+            var containers = document.querySelectorAll('.container');
+            containers.forEach(function(container) {
+                container.classList.remove('active');
+            });
+
+            // Show the selected container
+            var selectedContainer = document.getElementById(tabId);
+            selectedContainer.classList.add('active');
+        }
+    </script>
 </body>
 </html>
