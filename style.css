@@ -21,7 +21,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: none; /* Ensure no border is applied to the .ring div */
 }
 .ring i {
   position: absolute;
@@ -70,6 +69,7 @@ body {
   align-items: center;
   flex-direction: column;
   gap: 20px;
+  z-index: 2; /* Ensure login box is above other elements */
 }
 .login h2 {
   font-size: 2em;
