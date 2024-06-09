@@ -21,7 +21,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: none; /* Ensure no border is applied to the .ring div */
 }
 .ring i {
   position: absolute;
@@ -93,8 +92,8 @@ body {
 }
 .login .inputBx input[type="submit"] {
   width: 100%;
-  background: #0078FF;
-  background: linear-gradient(45deg, #FF357A, #FFF172);
+  background: #0078ff;
+  background: linear-gradient(45deg, #ff357a, #fff172);
   border: none;
   cursor: pointer;
 }
@@ -112,14 +111,4 @@ body {
 .login .links a {
   color: #fff;
   text-decoration: none;
-}
-/* Add this to your existing CSS */
-.ring-image {
-  position: absolute;
-  top: 0; /* Adjust to move the image higher */
-  left: 50%;
-  transform: translate(-50%, -50%); /* Center the image */
-  width: 100px; /* Adjust the size as needed */
-  height: auto;
-  z-index: 3; /* Ensure the image is above other elements */
 }
