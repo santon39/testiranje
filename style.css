@@ -69,6 +69,7 @@ body {
   align-items: center;
   flex-direction: column;
   gap: 20px;
+  z-index: 2; /* Ensure login box is above other elements */
 }
 .login h2 {
   font-size: 2em;
@@ -115,9 +116,10 @@ body {
 /* Add this to your existing CSS */
 .ring-image {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
-  transform: translate(-50%, -150%); /* Adjust the vertical positioning */
+  transform: translate(-50%, -100%); /* Adjust the vertical positioning */
   width: 100px; /* Adjust the size as needed */
   height: auto;
+  z-index: 3; /* Ensure the image is above other elements */
 }
