@@ -116,10 +116,6 @@ body {
 /* Add this to your existing CSS */
 .ring-image {
   position: absolute;
-  top: 40%;
+  top: 20%; /* Adjust to move the image higher */
   left: 50%;
-  transform: translate(-50%, -100%); /* Adjust the vertical positioning */
-  width: 100px; /* Adjust the size as needed */
-  height: auto;
-  z-index: 3; /* Ensure the image is above other elements */
-}
+  transform: translate
