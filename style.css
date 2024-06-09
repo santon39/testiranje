@@ -21,6 +21,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: none; /* Ensure no border is applied to the .ring div */
 }
 .ring i {
   position: absolute;
@@ -40,6 +41,10 @@ body {
   border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
   animation: animate2 10s linear infinite;
 }
+.ring i:nth-child(4) {
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  animation: animate3 8s linear infinite; /* New animation for the static ring */
+}
 .ring:hover i {
   border: 6px solid var(--clr);
   filter: drop-shadow(0 0 20px var(--clr));
@@ -58,6 +63,14 @@ body {
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+@keyframes animate3 { /* New animation keyframes */
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
   }
 }
 .login {
@@ -116,7 +129,7 @@ body {
 /* Add this to your existing CSS */
 .ring-image {
   position: absolute;
-  top: 0; /* Adjust to move the image higher */
+  top: 10%; /* Adjust to move the image higher */
   left: 50%;
   transform: translate(-50%, 0); /* Center the image */
   width: 100px; /* Adjust the size as needed */
