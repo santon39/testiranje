@@ -112,3 +112,12 @@ body {
   color: #fff;
   text-decoration: none;
 }
+/* Add this to your existing CSS */
+.ring-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -150%); /* Adjust the vertical positioning */
+  width: 100px; /* Adjust the size as needed */
+  height: auto;
+}
