@@ -116,9 +116,9 @@ body {
 /* Add this to your existing CSS */
 .ring-image {
   position: absolute;
-  top: 0; /* Adjust to move the image higher */
+  top: 10%; /* Adjust to move the image higher */
   left: 50%;
-  transform: translate(-50%, -50%); /* Center the image */
+  transform: translate(-50%, 0); /* Center the image */
   width: 100px; /* Adjust the size as needed */
   height: auto;
   z-index: 3; /* Ensure the image is above other elements */
