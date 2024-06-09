@@ -99,3 +99,27 @@ body {
   cursor: pointer;
 }
 .login .inputBx input::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+.login .links {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.login .links a {
+  color: #fff;
+  text-decoration: none;
+}
+/* Add this to your existing CSS */
+.ring-image {
+  position: absolute;
+  top: -40px; /* Adjust to move the image higher */
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the image */
+  width: 100px; /* Adjust the size as needed */
+  height: auto;
+  z-index: 3; /* Ensure the image is above other elements */
+}
