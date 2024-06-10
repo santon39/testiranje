@@ -111,7 +111,7 @@ body {
 /* Media Query for Mobile */
 @media (max-width: 600px) {
   .wrapper {
-    padding: 20px;
+    margin: 20px;
   }
 
   .wrapper .name {
