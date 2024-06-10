@@ -69,81 +69,17 @@ body {
   margin-top: 20px;
 }
 
-.wrapper .social-media .icon {
-  position: relative;
-  background: #ffffff;
-  border-radius: 50%;
+.wrapper .social-media a {
+  color: #fff;
+  font-size: 2em;
+  margin: 0 10px;
   padding: 15px;
-  margin: 10px;
-  width: 50px;
-  height: 50px;
-  font-size: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: 300ms;
 }
 
-.wrapper .social-media .tooltip {
-  position: absolute;
-  top: 0;
-  font-size: 14px;
-  background: #ffffff;
-  color: #ffffff;
-  padding: 5px 8px;
-  border-radius: 5px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.wrapper .social-media .tooltip::before {
-  position: absolute;
-  content: "";
-  height: 8px;
-  width: 8px;
-  background: #ffffff;
-  bottom: -3px;
-  left: 50%;
-  transform: translate(-50%) rotate(45deg);
-  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.wrapper .social-media .icon:hover .tooltip {
-  top: -45px;
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
-
-.wrapper .social-media .icon:hover span,
-.wrapper .social-media .icon:hover .tooltip {
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
-}
-
-.wrapper .social-media .linkedin:hover,
-.wrapper .social-media .linkedin:hover .tooltip,
-.wrapper .social-media .linkedin:hover .tooltip::before {
-  background: #1877F2;
-  color: #ffffff;
-}
-
-.wrapper .social-media .instagram:hover,
-.wrapper .social-media .instagram:hover .tooltip,
-.wrapper .social-media .instagram:hover .tooltip::before {
-  background: #E4405F;
-  color: #ffffff;
-}
-
-.wrapper .social-media .youtube:hover,
-.wrapper .social-media .youtube:hover .tooltip,
-.wrapper .social-media .youtube:hover .tooltip::before {
-  background: #CD201F;
-  color: #ffffff;
+.wrapper .social-media a:hover {
+  color: #A1A2AD;
+  transition: 300ms;
 }
 
 .wrapper .mail {
@@ -172,8 +108,27 @@ body {
   margin-top: 15px;
 }
 
-.divider {
-  margin: 20px 0;
-  border: none;
-  border-top: 1px solid #ccc;
+/* Media Query for Mobile */
+@media (max-width: 600px) {
+  .wrapper {
+    padding: 20px;
+  }
+
+  .wrapper .name {
+    font-size: 1.8em;
+  }
+
+  .wrapper .description {
+    font-size: 1em;
+  }
+
+  .wrapper .social-media a {
+    font-size: 1.5em;
+    padding: 10px;
+  }
+
+  .wrapper .mail {
+    padding: 8px 35px;
+    font-size: 1em;
+  }
 }
