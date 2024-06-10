@@ -63,16 +63,21 @@ body {
   margin-top: 10px;
 }
 
-.wrapper .social-media a i {
+.wrapper .social-media {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.wrapper .social-media a {
   color: #fff;
   font-size: 2em;
-  margin-left: 10px;
-  margin-top: 10px;
+  margin: 0 10px;
   padding: 15px;
   transition: 300ms;
 }
 
-.wrapper .social-media a i:hover {
+.wrapper .social-media a:hover {
   color: #A1A2AD;
   transition: 300ms;
 }
@@ -101,4 +106,29 @@ body {
 .wrapper .mail .fa-fa-envelope-o {
   margin-right: 5px;
   margin-top: 15px;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 600px) {
+  .wrapper {
+    margin: 20px;
+  }
+
+  .wrapper .name {
+    font-size: 1.8em;
+  }
+
+  .wrapper .description {
+    font-size: 1em;
+  }
+
+  .wrapper .social-media a {
+    font-size: 1.5em;
+    padding: 10px;
+  }
+
+  .wrapper .mail {
+    padding: 8px 35px;
+    font-size: 1em;
+  }
 }
