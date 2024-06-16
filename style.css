@@ -32,6 +32,7 @@ body {
   align-items: center;
   background: linear-gradient(to right, #2399d7, #141B41);
   font-family: "PT Sans", sans-serif;
+  overflow: hidden;
 }
 
 .wrapper {
@@ -44,6 +45,19 @@ body {
   text-align: center;
   animation: fadeIn 2s ease-in-out forwards;
   opacity: 0;
+  position: relative;
+}
+
+.wrapper::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  border-radius: 30px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  z-index: -1;
 }
 
 .wrapper .image-wrapper img {
@@ -54,11 +68,12 @@ body {
   -ms-user-select: none;
   user-select: none;
   border: 2px solid black;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .wrapper .image-wrapper img:hover {
   transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .wrapper .name {
@@ -114,10 +129,13 @@ body {
   animation: fadeIn 3s ease-in-out forwards;
   opacity: 0;
   animation-delay: 1.5s;
+  border: 2px solid transparent;
 }
 
 .wrapper .mail:hover {
   background: #fafe18;
+  color: #141B41;
+  border-color: #141B41;
   transition: 300ms;
 }
 
