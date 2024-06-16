@@ -67,6 +67,7 @@ body {
   border: 2px solid black;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   image-rendering: -webkit-optimize-contrast; /* Ensures better rendering on Retina displays */
+  image-rendering: crisp-edges; /* Additional property for high-DPI displays */
 }
 
 .wrapper .image-wrapper img:hover {
