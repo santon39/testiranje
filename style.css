@@ -11,8 +11,6 @@
   text-align: center;
   text-decoration: none;
   box-sizing: border-box;
-  -webkit-font-smoothing: antialiased; /* Smooth fonts */
-  -moz-osx-font-smoothing: grayscale;
 }
 
 img {
