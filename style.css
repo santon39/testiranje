@@ -11,10 +11,13 @@
   text-align: center;
   text-decoration: none;
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased; /* Smooth fonts */
+  -moz-osx-font-smoothing: grayscale;
 }
 
 img {
   max-width: 100%;
+  height: auto; /* Ensures image maintains its aspect ratio */
 }
 
 html, body {
@@ -60,11 +63,11 @@ body {
 .wrapper .image-wrapper img {
   width: 100%;
   max-width: 400px;
+  height: auto;
   border-radius: 20%;
   user-select: none;
   border: 2px solid black;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  height: auto; /* Ensures image maintains its aspect ratio */
 }
 
 .wrapper .image-wrapper img:hover {
