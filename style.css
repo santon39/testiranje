@@ -42,6 +42,8 @@ body {
   border-radius: 20px;
   box-shadow: 0px 0px 80px 1px #212129;
   text-align: center;
+  animation: fadeIn 2s ease-in-out forwards;
+  opacity: 0;
 }
 
 .wrapper .image-wrapper img {
@@ -52,22 +54,35 @@ body {
   -ms-user-select: none;
   user-select: none;
   border: 2px solid black;
+  transition: transform 0.3s ease-in-out;
+}
+
+.wrapper .image-wrapper img:hover {
+  transform: scale(1.1);
 }
 
 .wrapper .name {
   font-size: 2.2em;
+  animation: fadeIn 3s ease-in-out forwards;
+  opacity: 0;
 }
 
 .wrapper .description {
   color: #A1A2AD;
   text-transform: uppercase;
   margin-top: 10px;
+  animation: fadeIn 3s ease-in-out forwards;
+  opacity: 0;
+  animation-delay: 0.5s;
 }
 
 .wrapper .social-media {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  animation: fadeIn 3s ease-in-out forwards;
+  opacity: 0;
+  animation-delay: 1s;
 }
 
 .wrapper .social-media a {
@@ -79,7 +94,7 @@ body {
 }
 
 .wrapper .social-media a:hover {
-  color: #A1A2AD;
+  color: #fafe18;
   transition: 300ms;
 }
 
@@ -96,11 +111,13 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  animation: fadeIn 3s ease-in-out forwards;
+  opacity: 0;
+  animation-delay: 1.5s;
 }
 
 .wrapper .mail:hover {
-  background: #212129;
-  color: #fff;
+  background: #fafe18;
   transition: 300ms;
 }
 
@@ -131,5 +148,15 @@ body {
   .wrapper .mail {
     padding: 8px 35px;
     font-size: 1em;
+  }
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
