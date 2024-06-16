@@ -64,6 +64,7 @@ body {
   user-select: none;
   border: 2px solid black;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  height: auto; /* Ensures image maintains its aspect ratio */
 }
 
 .wrapper .image-wrapper img:hover {
