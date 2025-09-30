@@ -28,7 +28,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to right, #2399d7, #141B41);
+  background: linear-gradient(to right, #050b2b, #050b2b);
   font-family: "PT Sans", sans-serif;
   overflow: hidden;
 }
