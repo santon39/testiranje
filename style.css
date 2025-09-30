@@ -90,27 +90,6 @@ body {
   animation-delay: 0.5s;
 }
 
-.wrapper .social-media {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-  animation: fadeIn 3s ease-in-out forwards;
-  opacity: 0;
-  animation-delay: 1s;
-}
-
-.wrapper .social-media a {
-  color: #fff;
-  font-size: 2em;
-  margin: 0 10px;
-  padding: 15px;
-  transition: 300ms;
-}
-
-.wrapper .social-media a:hover {
-  color: #fafe18;
-  transition: 300ms;
-}
 
 .divider {
   width: 80%;
@@ -160,11 +139,6 @@ body {
 
   .wrapper .description {
     font-size: 1em;
-  }
-
-  .wrapper .social-media a {
-    font-size: 1.5em;
-    padding: 10px;
   }
 
   .wrapper .mail {
