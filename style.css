@@ -115,14 +115,14 @@ body {
   border: 2px solid transparent;
 }
 
-.wrapper .mail:hover {
+.wrapper .download-button:hover {
   background: #fafe18;
   color: #141B41;
   border-color: #141B41;
   transition: 300ms;
 }
 
-.wrapper .mail .fa-fa-envelope-o {
+.wrapper .download-button .fa-fa-download {
   margin-right: 5px;
   margin-top: 15px;
 }
