@@ -99,7 +99,7 @@ body {
   opacity: 0.5;
 }
 
-.wrapper .mail {
+.wrapper .download-buttonf {
   background: #fff;
   color: #212129;
   text-transform: none;
@@ -141,7 +141,7 @@ body {
     font-size: 1em;
   }
 
-  .wrapper .mail {
+  .wrapper .download-button {
     padding: 8px 35px;
     font-size: 1em;
   }
